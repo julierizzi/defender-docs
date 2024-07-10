@@ -128,7 +128,7 @@ Enable\Disable Sample collection|Enabled - "Enable sample collection on machines
 
 <br>
 
-**Policy location:**  \Windows Components\Microsoft Defender Antivirus
+**Policy location:**  \Windows Components\Windows Defender Antivirus
 
 Policy|Setting
 ---|---
@@ -136,7 +136,7 @@ Configure detection for potentially unwanted applications|Enabled, Block
 
 <br>
 
-**Policy location:** \Windows Components\Microsoft Defender Antivirus\MAPS
+**Policy location:** \Windows Components\Windows Defender Antivirus\MAPS
 
 Policy|Setting
 ---|---
@@ -145,7 +145,7 @@ Send file samples when further analysis is required | Enabled, Send safe samples
 
 <br>
 
-**Policy location:** \Windows Components\Microsoft Defender Antivirus\Real-time Protection
+**Policy location:** \Windows Components\Windows Defender Antivirus\Real-time Protection
 
 Policy|Setting
 ---|---
@@ -156,7 +156,7 @@ Monitor file and program activity on your computer|Enabled
 
 <br>
 
-**Policy location:**  \Windows Components\Microsoft Defender Antivirus\Scan
+**Policy location:**  \Windows Components\Windows Defender Antivirus\Scan
 
 These settings configure periodic scans of the endpoint. We recommend performing a weekly quick scan, performance permitting.
 
@@ -166,7 +166,7 @@ Check for the latest virus and spyware security intelligence before running a sc
 
 <br>
 
-**Policy location:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
+**Policy location:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
 
 Get the current list of attack surface reduction rules GUIDs from [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md). For additional, per rules details, see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
@@ -184,7 +184,7 @@ Get the current list of attack surface reduction rules GUIDs from [Attack surfac
 
 Policy|Location|Setting
 ---|---|---
-Configure Controlled folder access| \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access| Enabled, Audit Mode
+Configure Controlled folder access| \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access| Enabled, Audit Mode
 
 ## Run a detection test to verify onboarding
 
@@ -247,7 +247,7 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 1. After you choose the GP, or create a new one, edit the GP.
 
-2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
+2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
 
     :::image type="content" source="media/realtime-protect.png" alt-text="Real-time protection" lightbox="media/realtime-protect.png":::
 
@@ -263,7 +263,7 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 ### Monitor all files in Real time protection
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender Antivirus** \> **Real-time Protection**.
 
 :::image type="content" source="media/config-monitor-incoming-outgoing-file-act.png" alt-text="Configure monitoring for incoming outgoing file activity" lightbox="media/config-monitor-incoming-outgoing-file-act.png":::
 
@@ -279,7 +279,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 ### Configure Potentially Unwanted Applications
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender Antivirus**.
 
 :::image type="content" source="media/config-potential-unwanted-apps.png" alt-text="Config potential unwanted app" lightbox="media/config-potential-unwanted-apps.png":::
 
@@ -287,7 +287,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 ### Configure Cloud Deliver Protection and send samples automatically
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MAPS**.
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender Antivirus** \> **MAPS**.
 
 :::image type="content" source="media/gpo-maps1.png" alt-text="maps" lightbox="media/gpo-maps1.png":::
 
@@ -305,7 +305,7 @@ For more information, see [Turn on cloud protection in Microsoft Defender Antivi
 
 ### Check for signature update
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender Antivirus** \> **Security Intelligence Updates**.
 
 :::image type="content" source="media/signature-update-1.png" alt-text="Signature update" lightbox="media/signature-update-1.png":::
 
@@ -313,8 +313,8 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 ### Configure cloud deliver timeout and protection level
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
-When you configure cloud protection level policy to **Default Microsoft Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender Antivirus** \> **MpEngine**.
+When you configure cloud protection level policy to **Default Windows Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
 
 :::image type="content" source="media/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="media/config-extended-cloud-check.png":::
 
